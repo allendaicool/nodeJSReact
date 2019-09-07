@@ -1,3 +1,4 @@
+/*@flow*/
 import React, { Component } from 'react';
 import SelectedFoods from './SelectedFoods';
 import FoodSearch from './FoodSearch';
@@ -7,7 +8,7 @@ class App extends Component {
     selectedFoods: [],
   };
 
-  removeFoodItem = (itemIndex: number):void => {
+  removeFoodItem = (itemIndex: number) => {
     const filteredFoods = this.state.selectedFoods.filter(
       (item, idx) => itemIndex !== idx,
     );
