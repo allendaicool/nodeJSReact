@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import SelectedFoods from "./SelectedFoods";
-import FoodSearch from "./FoodSearch";
+import React, { Component } from 'react';
+import SelectedFoods from './SelectedFoods';
+import FoodSearch from './FoodSearch';
 
 class App extends Component {
   state = {
-    selectedFoods: []
+    selectedFoods: [],
   };
 
-  removeFoodItem = itemIndex => {
+  removeFoodItem = (itemIndex: number):void => {
     const filteredFoods = this.state.selectedFoods.filter(
-      (item, idx) => itemIndex !== idx
+      (item, idx) => itemIndex !== idx,
     );
     this.setState({ selectedFoods: filteredFoods });
   };
 
-  addFood = food => {
+  addFood = (food) => {
     const newFoods = this.state.selectedFoods.concat(food);
     this.setState({ selectedFoods: newFoods });
   };
