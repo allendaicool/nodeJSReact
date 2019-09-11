@@ -130,3 +130,11 @@ git push heroku master
 ```
 
 Heroku will give you a link at which to view your live app.
+
+
+
+1） Nginx 配置：
+https://stackfame.com/deploy-nodejs-app-on-ubuntu-with-forever-and-nginx
+https://www.hrupin.com/2017/11/how-to-install-nginx-webserver-on-mac-os-x
+
+
