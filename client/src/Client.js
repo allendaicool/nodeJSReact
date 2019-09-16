@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+// @flow
 function search(query, cb) {
   return fetch(`api/food?q=${query}`, {
     accept: "application/json"
