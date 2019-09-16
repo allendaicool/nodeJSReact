@@ -130,3 +130,12 @@ git push heroku master
 ```
 
 Heroku will give you a link at which to view your live app.
+
+
+1） 自定义node server 和 react client 各自的package.json 文件， 调整后的node 应用支持flow type check 和 babel eslint 
+2） Nginx 配置：
+https://stackfame.com/deploy-nodejs-app-on-ubuntu-with-forever-and-nginx
+https://www.hrupin.com/2017/11/how-to-install-nginx-webserver-on-mac-os-x
+3） 。。。
+
+
