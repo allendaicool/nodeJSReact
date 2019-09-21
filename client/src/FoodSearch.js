@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
 import Client from "./Client";
+import type {FoodNutritionType} from './Utility/constant';
 
 const MATCHING_ITEM_LIMIT = 25;
 
@@ -27,8 +28,9 @@ class FoodSearch extends React.Component {
       this.setState({
         showRemoveIcon: true
       });
-
-      Client.search(value, foods => {
+      console.log('value is ', value);
+      Client.search(value, (foods: Array<FoodNutritionType>) => {
+        console.log('foods are ', foods);
         this.setState({
           foods: foods.slice(0, MATCHING_ITEM_LIMIT)
         });
