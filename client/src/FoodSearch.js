@@ -2,6 +2,7 @@
 import React from "react";
 import Client from "./Client";
 import type {FoodNutritionType} from './Utility/constant';
+import styles from './index.css';
 
 const MATCHING_ITEM_LIMIT = 25;
 

@@ -14,7 +14,7 @@
    "extends": [
     "plugin:flowtype/recommended"
   ],
-    "plugins": ["react", "flowtype", "prettier"],
+    "plugins": ["react", "flowtype", "prettier", "react-hooks"],
     "env": {
     "browser": true,
     "jasmine": true,
@@ -77,7 +77,8 @@
       "always"
     ],
     "flowtype/use-flow-type": 1,
-    "flowtype/valid-syntax": 1
+    "flowtype/valid-syntax": 1,
+    "react-hooks/rules-of-hooks": "error"
   },
   "settings": {
     "flowtype": {
@@ -85,4 +86,3 @@
     }
   }
 }
-

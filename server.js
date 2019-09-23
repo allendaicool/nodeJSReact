@@ -7,7 +7,7 @@ const filebuffer = fs.readFileSync("db/usda-nnd.sqlite3");
 const db = new sqlite.Database(filebuffer);
 
 const app = express();
-
+console.log('prot is ', process.env.PORT);
 app.set("port", process.env.PORT || 3001);
 
 // Express only serves static assets in production
